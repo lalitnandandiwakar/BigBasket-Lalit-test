@@ -11,14 +11,14 @@ def get_bb_slot(url):
     
     driver = webdriver.Chrome()
     driver.get(url)
-    print("Please login using OTP and then wait for a while.")
+    print("Please login using OTP and then wait for a while......")
     time.sleep(60)
 
 
     while 1:
         driver.get(url)     
         time.sleep(2)
-        print("Trying to find a slot!")
+        print("Trying to find a slot!....")
         try:
             driver.find_element_by_xpath("//button[@id = 'checkout']").click()
 
